@@ -67,9 +67,3 @@ section {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
