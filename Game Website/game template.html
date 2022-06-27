@@ -41,11 +41,11 @@
 </section>
 
 <div>
-    <button onclick="makeFullScreen()" >Fullscreen</button>
+    <button onclick="makeFullScreen(), showHideable()" >Fullscreen</button>
 </div>
 
-<div class="unfullscreen_button">
-    <button onclick="makeUnfullScreen()" >Unfullscreen</button>
+<div id="hideable" class="unfullscreen_button">
+    <button onclick="makeUnfullScreen(), hideHideable()" >Unfullscreen</button>
 </div>
 
 <script src="Games/fullscreen.js"></script>
