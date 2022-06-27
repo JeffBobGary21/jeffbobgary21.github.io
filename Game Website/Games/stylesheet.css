@@ -81,8 +81,10 @@ iframe.fullScreen {
     border-radius: 0;
 }
 iframe.unfullScreen {
-    width: 50%;
-    height: 50%;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
 }
 div.unfullscreen_button {
     position:fixed;
