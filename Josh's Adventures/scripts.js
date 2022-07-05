@@ -12,6 +12,3 @@ function toggleDarkModeText() {
       x.innerHTML = "light_mode";
     }
 }
-
-// Dark Mode Cookie
-Cookie.set('dark-mode-enabled', 'true');
