@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="stylesheet.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="Lessons/scripts.js"></script>
 
 <!-- Header -->
 <header>
     <h1>Coding Guide</h1>
+    <button class="dark_mode_button" onclick="toggleDarkMode()"><span class="material-icons"><div id="toggleDarkModeText">light_mode</div></span></button>
 </header>
 
 <!-- Body -->
-<body>
+<body onload="getDarkModeCookie()">
     <section>
-        <p>How to install Chromium</p>
-        <code class="code">sudo apt install -y chromium-browser</code>
+        <p>How to make Dark Mode</p>
+        <h2>HTML:</h2>
+        <code class="code">
+            &ltlink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt
+            &ltbutton class="dark_mode_button" onclick="toggleDarkMode()"&gt&ltspan class="material-icons"&gt&ltdiv id="toggleDarkModeText"&gtlight_mode&lt/div&gt&lt/span&gt&lt/button>
+        </code>
+        <h2>Javascript:</h2>
+        <code class="code"></code>
+        <h2>CSS:</h2>
+        <code class="code"></code>
     </section>
 </body>
 

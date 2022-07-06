@@ -25,7 +25,7 @@ function setDarkModeFalse() {
 }
 
 // Get cookie value?
-function getDarkmodeCookie() {
+function getDarkModeCookie() {
   var cookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({...accumulator, [key.trim()]:decodeURIComponent(value) }),{});
   if (cookies.darkmode == "false") {
     toggleDarkMode()
