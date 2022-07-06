@@ -4,10 +4,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="scripts.js"></script>
 
-<!-- JS Cookie -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.mjs"></script>
-<script nomodule defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.js"></script>
-
 <!-- Info For Browser -->
 <title>Josh's Adventures</title>
 
@@ -15,7 +11,7 @@
 <button class="dark_mode_button" onclick="toggleDarkMode()"><span class="material-icons"><div id="toggleDarkModeText">light_mode</div></span></button>
 
 <!-- Body -->
-<body class="dark_mode">
+<body class="dark_mode" onload="getDarkmodeCookie()">
     <section>
         <p>Words</p>
     </section>
