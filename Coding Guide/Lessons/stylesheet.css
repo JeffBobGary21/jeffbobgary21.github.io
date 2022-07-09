@@ -114,7 +114,11 @@ button:hover {
 .dark_mode section {
     background-color: #323232;
     color: white;
-    border: 4px solid #222222;
+    border: 4px solid rgb(34, 34, 34);
+}
+.dark_mode nav {
+    background-color: #323232;
+    color: white;
 }
 .dark_mode .code {
     background-color: white;

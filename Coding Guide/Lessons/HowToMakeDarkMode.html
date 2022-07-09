@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="stylesheet.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="scripts.js"></script>
+
+<!-- Header -->
+<header>
+    <h1>Coding Guide</h1>
+    <button class="dark_mode_button" onclick="toggleDarkMode()"><span class="material-icons"><div id="toggleDarkModeText">light_mode</div></span></button>
+</header>
+
+<!-- Body -->
+<body onload="getDarkModeCookie()">
+    <section>
+        <p>How to make Dark Mode</p>
+        <h2>HTML:</h2>
+        <code class="code">
+            &lt-- Imports Google Icon Library --&gt<br>
+            &ltlink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt<br><br>
+            &lt-- Makes Button --&gt<br>
+            &ltbutton class="dark_mode_button" onclick="toggleDarkMode()"&gt&ltspan class="material-icons"&gt&ltdiv id="toggleDarkModeText"&gtlight_mode&lt/div&gt&lt/span&gt&lt/button&gt<br><br>
+            &lt-- Loads Dark Mode Cookie on page load --&gt<br>
+            &ltbody onload="getDarkModeCookie()"&gt&lt/body&gt
+        </code>
+        <h2>Javascript:</h2>
+        <code class="code">
+            // Dark Mode Switcher Button<br>
+            function toggleDarkMode() {<br>
+                var element = document.body;<br>
+                element.classList.toggle("dark_mode");<br>
+                toggleDarkModeText()<br>
+            }<br>
+            function toggleDarkModeText() {<br>
+                var x = document.getElementById("toggleDarkModeText");<br>
+                if (x.innerHTML === "light_mode") {<br>
+                x.innerHTML = "dark_mode";<br>
+                setDarkModeFalse()<br>
+                } else {<br>
+                x.innerHTML = "light_mode";<br>
+                setDarkModeTrue()<br>
+                }<br>
+            }<br>
+            <br>
+            // Functions To Set Darkmode Status<br>
+            function setDarkModeTrue() {<br>
+                document.cookie = "darkmode=true"<br>
+            }<br>
+            <br>
+            function setDarkModeFalse() {<br>
+                document.cookie = "darkmode=false"<br>
+            }<br>
+            <br>
+            // Get cookie value<br>
+            function getDarkModeCookie() {<br>
+                var cookies = document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator, [key, value]) => ({...accumulator, [key.trim()]:decodeURIComponent(value) }),{});<br>
+                if (cookies.darkmode == "false") {<br>
+                toggleDarkMode()<br>
+                }<br>
+            }
+        </code>
+        <h2>CSS:</h2>
+        <code class="code">
+            /* Dark Mode */<br>
+            .dark_mode {<br>
+            background-color: #000000;<br>
+            color: white;<br>
+            }
+        </code>
+    </section>
+</body>
+
+</html>
