@@ -14,6 +14,14 @@ body {
 h1 {
     color:black;
 }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
 nav ul {
 list-style-type: none;
 background-color: #ffffff;
@@ -110,6 +118,14 @@ button:hover {
 }
 .dark_mode h1 {
     color: white;
+}
+.dark_mode a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dark_mode a:visited {
+    text-decoration: none;
+    color: #ffffff;
 }
 .dark_mode section {
     background-color: #323232;
