@@ -83,7 +83,6 @@ button {
 button:hover {
     background-color: #bebebe;
 }
-
 .code {
     color: #ffffff;
     background-color: #323232;
@@ -92,7 +91,6 @@ button:hover {
     border-radius: 5px;
     display: inline;
     font-family: monospace;
-    white-space: ;
 }
 .dark_mode_button {
     padding-top: 10px;
