@@ -16,11 +16,11 @@
         <p>How to make Dark Mode</p>
         <h2>HTML:</h2>
         <code class="code">
-            &lt-- Imports Google Icon Library --&gt<br>
+            &lt!-- Imports Google Icon Library --&gt<br>
             &ltlink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt<br><br>
-            &lt-- Makes Button --&gt<br>
+            &lt!-- Makes Button --&gt<br>
             &ltbutton class="dark_mode_button" onclick="toggleDarkMode()"&gt&ltspan class="material-icons"&gt&ltdiv id="toggleDarkModeText"&gtlight_mode&lt/div&gt&lt/span&gt&lt/button&gt<br><br>
-            &lt-- Loads Dark Mode Cookie on page load --&gt<br>
+            &lt!-- Loads Dark Mode Cookie on page load --&gt<br>
             &ltbody onload="getDarkModeCookie()"&gt&lt/body&gt
         </code>
         <h2>Javascript:</h2>
@@ -67,6 +67,25 @@
             color: white;<br>
             }
         </code>
+    </section>
+    <section>
+        <h2>Note:</h2>
+        <p>
+            All elements that you want to make dark can be made dark without the "Darkmode" class. You do this directly from the CSS. Example:
+        </p>
+        <code class="code">
+            .dark_mode section {<br>
+                background-color: #323232;<br>
+                color: white;<br>
+                border: 4px solid #ffffff;<br>
+            }<br>
+            .dark_mode ul {<br>
+                background-color: #323232;<br>
+                color: white;<br>
+                border: 4px solid #ffffff;<br>
+            }
+        </code>
+        <p>This will make it so when darkmode is triggered it will change the element, even if it doesn't have the "darkmode" class.</p>
     </section>
 </body>
 

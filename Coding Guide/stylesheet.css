@@ -97,7 +97,7 @@ button:hover {
     border: white;
     padding: 4px;
     border-radius: 5px;
-    display: inline;
+    display: block;
     font-family: monospace;
 }
 .dark_mode_button {
