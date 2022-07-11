@@ -28,6 +28,9 @@ a:visited {
     text-decoration: none;
     color: #000000;
 }
+li {
+    border: none;
+}
 nav ul {
 list-style-type: none;
 background-color: #ffef96;
@@ -141,6 +144,9 @@ button:hover {
     color: white;
     background-color: #606060;
     border: 4px solid #ffffff;
+}
+.dark_mode li {
+    border: none;
 }
 .dark_mode button:hover {
     background-color: rgb(34, 34, 34);
