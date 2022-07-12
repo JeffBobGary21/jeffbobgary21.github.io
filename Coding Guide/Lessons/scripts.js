@@ -31,3 +31,8 @@ function getDarkModeCookie() {
     toggleDarkMode()
   }
 }
+
+// Get cookie value on page load
+window.onload = function() {
+  getDarkModeCookie()
+}

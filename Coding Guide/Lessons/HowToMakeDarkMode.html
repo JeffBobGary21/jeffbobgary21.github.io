@@ -21,9 +21,7 @@
             &lt!-- Imports Google Icon Library --&gt<br>
             &ltlink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt<br><br>
             &lt!-- Makes Button --&gt<br>
-            &ltbutton class="dark_mode_button" onclick="toggleDarkMode()"&gt&ltspan class="material-icons"&gt&ltdiv id="toggleDarkModeText"&gtlight_mode&lt/div&gt&lt/span&gt&lt/button&gt<br><br>
-            &lt!-- Loads Dark Mode Cookie on page load --&gt<br>
-            &ltbody onload="getDarkModeCookie()"&gt&lt/body&gt
+            &ltbutton class="dark_mode_button" onclick="toggleDarkMode()"&gt&ltspan class="material-icons"&gt&ltdiv id="toggleDarkModeText"&gtlight_mode&lt/div&gt&lt/span&gt&lt/button&gt<br>
         </code>
         <h2>Javascript:</h2>
         <code class="code">
@@ -59,6 +57,11 @@
                 if (cookies.darkmode == "false") {<br>
                 toggleDarkMode()<br>
                 }<br>
+            }<br>
+            <br>
+            // Get cookie value on page load<br>
+            window.onload = function() {<br>
+                getDarkModeCookie()<br>
             }
         </code>
         <h2>CSS:</h2>
