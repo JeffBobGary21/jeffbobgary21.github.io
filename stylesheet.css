@@ -74,9 +74,6 @@ button {
 }
 
 /* Dark Mode */
-.dark_mode .logo {
-    
-}
 .dark_mode {
     background-color: black;
     color: white;
