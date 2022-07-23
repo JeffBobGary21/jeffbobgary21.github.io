@@ -15,12 +15,7 @@ section {
     color: black;
     border: 4px solid black;
 
-    margin-bottom: 10px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 8px;
 
     text-align: center;
 }
@@ -45,6 +40,15 @@ nav ul li a {
     text-decoration: none;
     color: #111111;
 }
+button {
+    background-color: #ffffff;
+    color: black;
+    border: 4px solid rgb(0, 0, 0);
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+}
 .logo {
     width: auto;
     height: 51px;
@@ -55,4 +59,67 @@ nav ul li a {
 .center {
     display: flex;
     justify-content: center;
+}
+
+/* Dark Mode Button */
+.dark_mode_button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Dark Mode */
+.dark_mode .logo {
+    
+}
+.dark_mode {
+    background-color: black;
+    color: white;
+}
+.dark_mode h1 {
+    color: white;
+}
+.dark_mode header h2 {
+    color:white;
+}
+.dark_mode a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dark_mode a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dark_mode section {
+    background-color: black;
+    color: white;
+    border: 4px solid #ffffff;
+}
+.dark_mode nav ul {
+    background-color: black;
+    color: white;
+    border: 4px solid #ffffff;
+}
+.dark_mode ul li {
+    border: none;
+    border-right: 2px solid white;
+}
+.dark_mode li a {
+    color: #ffffff;
+}
+.dark_mode button {
+    color: white;
+    background-color: black;
+    border: 4px solid #ffffff;
+}
+.dark_mode li {
+    border: none;
+}
+.dark_mode button:hover {
+    background-color: rgb(34, 34, 34);
 }
