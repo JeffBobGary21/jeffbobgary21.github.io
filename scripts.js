@@ -38,5 +38,3 @@ function getDarkModeCookie() {
 window.onload = function() {
   getDarkModeCookie()
 }
-
-// Change Logo
